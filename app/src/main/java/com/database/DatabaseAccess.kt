@@ -7,13 +7,12 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.Pojo.Drug
 
-class DatabaseAccess {
+class DatabaseAccess(context: Context) {
     private var database : SQLiteDatabase? = null
     private var openhelper : SQLiteOpenHelper? = null
     private var instance:DatabaseAccess ? = null
 
-    constructor(context: Context)
-    {
+    init {
         this.openhelper = MyDatabase(context)
     }
 
@@ -40,7 +39,7 @@ class DatabaseAccess {
     }
 
     @SuppressLint("Range")
-    fun getAll_Drugs(): ArrayList<Drug> {
+    fun get_All_Drugs(): ArrayList<Drug> {
         val array_drugs = arrayListOf<Drug>()
         val cursor: Cursor = database!!.rawQuery("SELECT * FROM $TABLE_NAME/*ORDER BY column_ID DESC*/", null)
         while (cursor.moveToNext()) {

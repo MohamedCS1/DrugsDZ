@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
 
     var database:DatabaseAccess?= null
     var rv:RecyclerView? = null
-    var adapter:Drugs_Adapter? = null
+    private var adapter:Drugs_Adapter? = null
     var lm:LinearLayoutManager? = null
-    var bu_totop:FloatingActionButton? = null
+    private var bu_totop:FloatingActionButton? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         database = DatabaseAccess(this).getInstance(this)
 
         database!!.open()
-        val drusgs = database!!.getAll_Drugs()
+        val drusgs = database!!.get_All_Drugs()
         database!!.close()
 
         rv = findViewById(R.id.rv_drugs)
 
-        adapter = Drugs_Adapter()
+        adapter = Drugs_Adapter(this)
 
         lm  = LinearLayoutManager(this)
 
