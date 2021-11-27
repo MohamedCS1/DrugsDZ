@@ -1,4 +1,4 @@
-package com.example.drugsdz
+package com.main.drugsdz
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

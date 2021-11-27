@@ -1,4 +1,4 @@
-package com.example.drugsdz
+package com.main.drugsdz
 
 import org.junit.Test
 
