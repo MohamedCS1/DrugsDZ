@@ -12,6 +12,8 @@ import android.content.Context
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.example.drugsdz.R
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.DrugViewHolder>() {
@@ -58,4 +60,27 @@ class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.D
         super.onViewDetachedFromWindow(holder)
     }
 
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun filterlist(filterlite:ArrayList<Drug>)
+    {
+        array_drugs = filterlite
+        notifyDataSetChanged()
+    }
+
+    fun filter(text: String, Array: ArrayList<Drug>)
+    {
+        val listfilter = arrayListOf<Drug>()
+
+        for (p in Array)
+        {
+            if (p.D_N_I.lowercase(
+                    Locale.getDefault()).contains(text.lowercase(Locale.getDefault()))||p.D_NM.lowercase(Locale.getDefault()).contains(text.lowercase(Locale.getDefault())))
+            {
+                listfilter.add(p)
+            }
+        }
+        filterlist(listfilter)
+
+    }
 }
