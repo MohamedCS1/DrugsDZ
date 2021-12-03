@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.main.drugsdz.Details_Drug">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FF7800"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:text="N°ENREGISTREMENT : " />
+
+            <TextView
+                android:id="@+id/tv_D_NE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FF7800"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:text="CODE : " />
+
+            <TextView
+                android:id="@+id/tv_D_CODE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FF7800"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:text="DENOMINATION \n COMMUNE INTERNATIONALE : " />
+
+            <TextView
+                android:id="@+id/tv_D_N_I"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="TextView DENOMINATION DENOMINATION DENOMINATION DENOMINATION" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="NOM DE MARQUE : " />
+
+            <TextView
+                android:id="@+id/tv_D_NM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FF7800"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:text="FORME : " />
+
+            <TextView
+                android:id="@+id/tv_D_F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FF7800"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:text="DOSAGE : " />
+
+            <TextView
+                android:id="@+id/tv_D_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="COND : " />
+
+            <TextView
+                android:id="@+id/tv_D_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="LISTE : " />
+
+            <TextView
+                android:id="@+id/tv_D_L"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="P1 : " />
+
+            <TextView
+                android:id="@+id/tv_D_P1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="P2 : " />
+
+            <TextView
+                android:id="@+id/tv_D_P2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="OBS : " />
+
+            <TextView
+                android:id="@+id/tv_D_OBS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="LABORATOIRES DETENTEUR DE LA DECISION D'ENREGISTREMENT : " />
+
+            <TextView
+                android:id="@+id/tv_D_LDLD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="PAYS DU LABORATOIRE \n DETENTEUR DE LA DECISION\n D'ENREGISTREMENT : " />
+
+            <TextView
+                android:id="@+id/tv_D_PLDDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="DATE D'ENREGISTREMENT INITIAL : " />
+
+            <TextView
+                android:id="@+id/tv_D_DEI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="DATE D'ENREGISTREMENT  FINAL : " />
+
+            <TextView
+                android:id="@+id/tv_D_DDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="TYPE : " />
+
+            <TextView
+                android:id="@+id/tv_D_TYPE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="#FF7800"
+                android:textStyle="bold"
+                android:text="STATUT : " />
+
+            <TextView
+                android:id="@+id/tv_D_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="TextView"
+                android:gravity="center"
+                android:padding="2dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_DDS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FF7800"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:text="DUREE DE STABILITE :  " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="TextView"
+                android:gravity="center"
+                android:padding="2dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

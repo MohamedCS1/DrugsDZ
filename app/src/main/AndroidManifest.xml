@@ -19,6 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.main.drugsdz.Details_Drug"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+
     </application>
 
 </manifest>
