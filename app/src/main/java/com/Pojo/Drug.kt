@@ -1,5 +1,7 @@
 package com.Pojo
 
+import java.io.Serializable
+
 data class Drug(
     val D_ID:String,
     val D_NE:String,
@@ -22,4 +24,4 @@ data class Drug(
     val D_DDS:String,
     val D_EMPTYFILD:String,
     val D_2:String
-    )
+    ) : Serializable

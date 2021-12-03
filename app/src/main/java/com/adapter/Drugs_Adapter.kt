@@ -8,10 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.Pojo.Drug
 import android.content.Context
-import android.content.Intent
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import com.main.drugsdz.Details_Drug
 import com.example.drugsdz.R
 import java.util.*
 import kotlin.collections.ArrayList
@@ -20,21 +18,22 @@ import kotlin.collections.ArrayList
 class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.DrugViewHolder>() {
 
     var array_drugs = arrayListOf<Drug>()
-    var setonclikitem:SetOnClickItem? = null
+    var listener:SetOnClickItem ? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DrugViewHolder {
         return DrugViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.card_drug ,parent ,false))
     }
 
     var lastPosition = - 1
     override fun onBindViewHolder(holder: DrugViewHolder, position: Int) {
+
         holder.name.text = array_drugs[position].D_NM
         holder.name_international.text = array_drugs[position].D_N_I
         holder.dose.text = array_drugs[position].D_D
         holder.type.text = array_drugs[position].D_TYPE
 
         holder.itemView.setOnClickListener {
-            setonclikitem?.setdrug(array_drugs[position])
-            context.startActivities(arrayOf(Intent(context , Details_Drug::class.java)))
+            listener?.onItemClikc(array_drugs[position])
         }
 
         val animation: Animation = AnimationUtils.loadAnimation(
@@ -91,8 +90,8 @@ class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.D
 
     }
 
-    fun setonclickdrudlistenner(setonclickdrug: SetOnClickItem)
+    fun onclikdrug(listener:SetOnClickItem)
     {
-        this.setonclikitem = setonclickdrug
+        this.listener = listener
     }
 }
