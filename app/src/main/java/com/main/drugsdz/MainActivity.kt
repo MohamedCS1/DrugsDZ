@@ -1,6 +1,9 @@
 package com.main.drugsdz
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Color
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -12,23 +15,28 @@ import com.adapter.Drugs_Adapter
 import com.adapter.SetOnClickItem
 import com.database.DatabaseAccess
 import com.example.drugsdz.R
-
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.l4digital.fastscroll.FastScrollRecyclerView
+import com.l4digital.fastscroll.FastScrollView
+import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
 
     var database:DatabaseAccess?= null
-    var rv:RecyclerView? = null
+    var rv:FastScrollRecyclerView? = null
     private var adapter:Drugs_Adapter? = null
     var lm:LinearLayoutManager? = null
     private var bu_totop:FloatingActionButton? = null
     var appbar:AppBarLayout? = null
     var searchbar:SearchView? = null
+    var fastScroller:FastScrollView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         appbar = findViewById(R.id.drug_appbar)
 
@@ -48,14 +56,13 @@ class MainActivity : AppCompatActivity() {
 
         adapter!!.onclikdrug(object :SetOnClickItem{
             override fun onItemClikc(drug: Drug) {
-                Toast.makeText(this@MainActivity ,drug.D_NM , Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this@MainActivity ,drug.D_NM , Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@MainActivity ,Details_Drug::class.java)
                 intent.putExtra("drug" ,drug)
                 startActivity(intent)
             }
 
         })
-
         lm  = LinearLayoutManager(this)
 
         adapter!!.setList(drugs)
@@ -68,6 +75,7 @@ class MainActivity : AppCompatActivity() {
             rv!!.smoothScrollToPosition(0)
         }
 
+
         appbar!!.setOnClickListener {
             searchbar!!.setIconifiedByDefault(false)
         }
@@ -78,10 +86,13 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
+
                 adapter!!.filter(newText.toString() ,drugs)
                 return true
             }
 
         })
+
     }
+
 }

@@ -3,11 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../.gradle/caches/transforms-3/cb1a6cdf744c603ef31e9932b0b82646/transformed/jetified-library-1.1.7/res/drawable/afs_md2_thumb.xml" value="0.21614583333333334" />
+        <entry key="../../.gradle/caches/transforms-3/cb1a6cdf744c603ef31e9932b0b82646/transformed/jetified-library-1.1.7/res/drawable/afs_md2_track.xml" value="0.21614583333333334" />
+        <entry key="../../.gradle/caches/transforms-3/cb1a6cdf744c603ef31e9932b0b82646/transformed/jetified-library-1.1.7/res/drawable/afs_popup_background.xml" value="0.21614583333333334" />
+        <entry key="../../.gradle/caches/transforms-3/cb1a6cdf744c603ef31e9932b0b82646/transformed/jetified-library-1.1.7/res/drawable/afs_thumb.xml" value="0.21614583333333334" />
+        <entry key="../../.gradle/caches/transforms-3/cb1a6cdf744c603ef31e9932b0b82646/transformed/jetified-library-1.1.7/res/drawable/afs_thumb_stateful.xml" value="0.21614583333333334" />
+        <entry key="../../.gradle/caches/transforms-3/cb1a6cdf744c603ef31e9932b0b82646/transformed/jetified-library-1.1.7/res/drawable/afs_track.xml" value="0.21614583333333334" />
         <entry key="app/src/main/res/drawable/bg_details_activity.xml" value="0.3859375" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3859375" />
+        <entry key="app/src/main/res/drawable/icon_totop.xml" value="0.21614583333333334" />
         <entry key="app/src/main/res/drawable/radius_shape.xml" value="0.3703125" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33061594202898553" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23958333333333334" />
         <entry key="app/src/main/res/layout/card_drug.xml" value="0.5" />
         <entry key="app/src/main/res/layout/details_drug.xml" value="0.33" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21614583333333334" />
       </map>
     </option>
   </component>

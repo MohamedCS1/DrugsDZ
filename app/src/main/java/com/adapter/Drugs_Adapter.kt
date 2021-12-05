@@ -11,19 +11,20 @@ import android.content.Context
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.example.drugsdz.R
+import com.l4digital.fastscroll.FastScroller
 import java.util.*
 import kotlin.collections.ArrayList
 
 
-class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.DrugViewHolder>() {
+class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.DrugViewHolder>() ,FastScroller.SectionIndexer{
 
     var array_drugs = arrayListOf<Drug>()
     var listener:SetOnClickItem ? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DrugViewHolder {
-        return DrugViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.card_drug ,parent ,false))
+        val rootview = LayoutInflater.from(parent.context).inflate(R.layout.card_drug ,parent ,false)
+        return DrugViewHolder(rootview)
     }
-
     var lastPosition = - 1
     override fun onBindViewHolder(holder: DrugViewHolder, position: Int) {
 
@@ -45,7 +46,7 @@ class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.D
     }
 
     override fun getItemCount(): Int {
-        return array_drugs.size
+        return array_drugs.size-1
     }
 
     class DrugViewHolder(itemView:View):RecyclerView.ViewHolder(itemView) {
@@ -66,7 +67,6 @@ class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.D
         holder.itemView.clearAnimation()
         super.onViewDetachedFromWindow(holder)
     }
-
 
     @SuppressLint("NotifyDataSetChanged")
     fun filterlist(filterlite:ArrayList<Drug>)
@@ -94,4 +94,9 @@ class Drugs_Adapter(val context: Context) : RecyclerView.Adapter<Drugs_Adapter.D
     {
         this.listener = listener
     }
+
+    override fun getSectionText(p0: Int): CharSequence {
+        return array_drugs[p0].D_N_I.subSequence(0 ,1)
+    }
+
 }

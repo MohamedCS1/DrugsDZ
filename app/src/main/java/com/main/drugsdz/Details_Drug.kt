@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.Pojo.Drug
-import com.adapter.Drugs_Adapter
 import com.example.drugsdz.R
 
 class Details_Drug : AppCompatActivity(){
@@ -35,6 +34,7 @@ class Details_Drug : AppCompatActivity(){
 
         val intent = intent.extras
         val drug = intent?.get("drug") as Drug
+
         tv_D_NE = findViewById(R.id.tv_D_NE)
         tv_D_CODE = findViewById(R.id.tv_D_CODE)
         tv_D_N_I = findViewById(R.id.tv_D_N_I)
@@ -73,6 +73,7 @@ class Details_Drug : AppCompatActivity(){
         tv_D_S!!.text = drug.D_S
         tv_D_DDS!!.text = drug.D_DDS
 
-         }
+
+    }
 
 }

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.main.drugsdz.MainActivity">
 
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/drug_appbar"
         android:layout_width="match_parent"
@@ -40,15 +41,15 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <com.l4digital.fastscroll.FastScrollRecyclerView
+        android:id="@+id/rv_drugs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:bubbleColor="#F8B24F"
+        app:bubbleTextColor="#ffffff"
+        app:handleColor="#F8B24F" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_drugs"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-            >
-
-        </androidx.recyclerview.widget.RecyclerView>
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

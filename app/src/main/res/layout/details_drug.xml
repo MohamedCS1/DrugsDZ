@@ -9,14 +9,13 @@
     android:background="@drawable/bg_details_activity"
     tools:context="com.main.drugsdz.Details_Drug">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp">
         <LinearLayout
@@ -43,7 +42,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic"/>
 
         </LinearLayout>
 
@@ -71,7 +71,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -88,7 +89,7 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textStyle="bold"
-                android:text="DENOMINATION \n COMMUNE INTERNATIONALE : " />
+                android:text="DENOMINATION COMMUNE INTERNATIONALE : " />
 
             <TextView
                 android:id="@+id/tv_D_N_I"
@@ -98,7 +99,8 @@
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:padding="2dp"
-                android:text="TextView DENOMINATION DENOMINATION DENOMINATION DENOMINATION" />
+                android:text="TextView DENOMINATION DENOMINATION DENOMINATION DENOMINATION"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -125,7 +127,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -152,7 +155,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic" />
 
         </LinearLayout>
         <LinearLayout
@@ -179,7 +183,8 @@
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:padding="2dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic" />
 
         </LinearLayout>
         <LinearLayout
@@ -206,7 +211,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -233,7 +239,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic" />
 
         </LinearLayout>
         <LinearLayout
@@ -260,7 +267,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -287,7 +295,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic" />
 
         </LinearLayout>
         <LinearLayout
@@ -314,7 +323,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -341,7 +351,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -358,7 +369,7 @@
                 android:padding="2dp"
                 android:textColor="#FF7800"
                 android:textStyle="bold"
-                android:text="PAYS DU LABORATOIRE \n DETENTEUR DE LA DECISION\n D'ENREGISTREMENT : " />
+                android:text="PAYS DU LABORATOIRE  DETENTEUR DE LA DECISION D'ENREGISTREMENT : " />
 
             <TextView
                 android:id="@+id/tv_D_PLDDD"
@@ -368,7 +379,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic" />
 
         </LinearLayout>
         <LinearLayout
@@ -395,7 +407,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic" />
 
         </LinearLayout>
         <LinearLayout
@@ -422,7 +435,8 @@
                 android:gravity="center"
                 android:padding="2dp"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -449,7 +463,8 @@
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:padding="2dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textStyle="italic" />
 
         </LinearLayout>
         <LinearLayout
@@ -476,7 +491,8 @@
                 android:textColor="@color/black"
                 android:text="TextView"
                 android:gravity="center"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:textStyle="italic"/>
 
         </LinearLayout>
         <LinearLayout
@@ -486,7 +502,6 @@
             android:gravity="center"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/tv_DDS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -497,13 +512,15 @@
                 android:text="DUREE DE STABILITE :  " />
 
             <TextView
+                android:id="@+id/tv_DDS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="@color/black"
                 android:text="TextView"
                 android:gravity="center"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:textStyle="italic" />
 
         </LinearLayout>
     </LinearLayout>
