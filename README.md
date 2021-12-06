@@ -1,14 +1,14 @@
 # DrugsDZ
 Nomenclature of drugs in Algeria
 <div>
-<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen0" alt="alt text" width="280" height="450" hspace="7">
-<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen1" alt="alt text" width="280" height="450" hspace="7">
-<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen2" alt="alt text" width="280" height="450" hspace="7">
-<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen3" alt="alt text" width="280" height="450" hspace="7">
-<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen4" alt="alt text" width="280" height="450" hspace="7">
-<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen5" alt="alt text" width="280" height="450" hspace="7">
-<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen6" alt="alt text" width="280" height="450" hspace="7">
-<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen7" alt="alt text" width="280" height="450" hspace="7">
+<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen0" alt="alt text" width="150" height="450" hspace="7">
+<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen1" alt="alt text" width="150" height="450" hspace="7">
+<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen2" alt="alt text" width="150" height="450" hspace="7">
+<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen3" alt="alt text" width="150" height="450" hspace="7">
+<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen4" alt="alt text" width="150" height="450" hspace="7">
+<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen5" alt="alt text" width="150" height="450" hspace="7">
+<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen6" alt="alt text" width="150" height="450" hspace="7">
+<img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen7" alt="alt text" width="150" height="450" hspace="7">
 
 ***************************************************************************
 
