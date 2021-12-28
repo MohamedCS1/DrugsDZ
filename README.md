@@ -1,5 +1,5 @@
 # DrugsDZ
-Nomenclature of drugs in Algeria
+Nomenclature of drugs in Algeria (+3400 Drug)
 <div>
 <img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen0" alt="alt text" width="300" height="450" hspace="7">
 <img src="https://github.com/MohamedCS1/DrugsDZ/blob/main/screen/screen1" alt="alt text" width="300" height="450" hspace="7">
